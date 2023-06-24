@@ -9,6 +9,7 @@
             "homepage": "https://github.com/ashrafAli23"
         }
     ],
+    "version": "1.0",
     "license": "MIT",
     "require": {},
     "autoload": {
