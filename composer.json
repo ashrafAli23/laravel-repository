@@ -1,0 +1,27 @@
+{
+    "name": "0x17/laravel-repository",
+    "description": "This is a package that help to implement repository pattern in laravel",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ashraf/0x17",
+            "email": "ashrafammar230@gmail.com",
+            "homepage": "https://github.com/ashrafAli23"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Laravel\\Repository\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravel\\Repository\\RepositoryServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Repositories;
+
+use Laravel\Repository\Eloquent\BaseRepository;
+use App\Repositories\Interfaces\{{interfaceName}};
+
+class {{repoName}} extends BaseRepository implements {{interfaceName}}
+{  
+}
