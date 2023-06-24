@@ -10,7 +10,6 @@
         }
     ],
     "license": "MIT",
-    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
@@ -23,5 +22,7 @@
                 "Laravel\\Repository\\RepositoryServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
