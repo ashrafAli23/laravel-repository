@@ -14,11 +14,11 @@ class RepositoryServiceProvider extends ServiceProvider
 
     public function boot()
     {
-            if ($this->app->runningInConsole()) {
-                $this->commands([
-                    CreateRepository::class,
-                ]);
-            }
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                CreateRepository::class,
+            ]);
+        }
     }
 
     public function register()
