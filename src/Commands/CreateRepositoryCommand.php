@@ -10,7 +10,6 @@ class CreateRepositoryCommand extends Command
     protected $signature = 'make:repository {name : The name of the repository to create}';
 
     protected $description = 'Create a new repository and interface with the specified name';
-
     public function handle()
     {
         $name = $this->argument('name');
