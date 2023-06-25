@@ -3,7 +3,6 @@
 namespace Laravel\Repository\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
 
 class CreateRepositoryCommand extends Command
 {

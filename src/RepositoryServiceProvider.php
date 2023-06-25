@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Laravel\Repository;
 
 use Illuminate\Support\ServiceProvider;
+use Laravel\Repository\Commands\CreateRepositoryCommand;
+use Laravel\Repository\Commands\CreateServiceCommand;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
@@ -12,7 +14,8 @@ class RepositoryServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                CreateRepository::class,
+                CreateRepositoryCommand::class,
+                CreateServiceCommand::class,
             ]);
         }
     }
