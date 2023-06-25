@@ -22,7 +22,7 @@ class CreateServiceCommand extends Command
         }
 
         $repoContent = file_get_contents(__DIR__ . '/../Stubs/Service.stub');
-        $repoContent = str_replace(['{{interfaceName}}'], ["I" . $name . "Repository"], $repoContent);
+        $repoContent = str_replace(['{{interfaceName}}', '{{repoName}}'], ["I" . $name . "Repository", $repoName], $repoContent);
 
         file_put_contents($repoPath, $repoContent);
 
