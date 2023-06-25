@@ -3,6 +3,7 @@
 namespace Laravel\Repository\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 
 class CreateRepositoryCommand extends Command
 {
@@ -19,6 +20,10 @@ class CreateRepositoryCommand extends Command
 
         $repoPath = app_path('Repositories/' . $repoName . '.php');
         $interfacePath = app_path('Repositories/' . 'Interfaces/' . $interfaceName . '.php');
+
+        if (!file_exists("app/Repositories/Interfaces")) {
+            mkdir("app/Repositories/Interfaces", 0777, true);
+        }
 
         $repoContent = file_get_contents(__DIR__ . '/../Stubs/Repository.stub');
         $interfaceContent = file_get_contents(__DIR__ . '/../Stubs/IRepository.stub');
