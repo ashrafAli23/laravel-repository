@@ -10,10 +10,10 @@ use Laravel\Repository\IRepository;
 
 abstract class BaseRepository implements IRepository
 {
-    protected Model $model;
+    protected Model|Eloquent|Builder $model;
 
 
-    protected Model $originalModel;
+    protected Model|Eloquent|Builder $originalModel;
 
     public function __construct(Model $model)
     {
