@@ -4,7 +4,13 @@ namespace App\Repositories;
 
 use Laravel\Repository\Eloquent\BaseRepository;
 use App\Repositories\Interfaces\{{interfaceName}};
+use Illuminate\Database\Eloquent\Model;
 
 class {{repoName}} extends BaseRepository implements {{interfaceName}}
 {  
+    public function __construct(Model $model)
+    {
+        parent::__construct($model);
+    }
+
 }
